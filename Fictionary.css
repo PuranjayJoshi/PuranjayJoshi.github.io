@@ -1,0 +1,217 @@
+@font-face {
+    font-family: FicTitleGothic;
+    src: url(MoriaCitadel.TTF);
+}
+
+body{
+    margin:0px;
+}
+
+.bg{
+    width:100%;
+    height:100%;
+}
+
+@keyframes magic{
+    0%{scale: 300%}
+    100%{scale:500%; opacity:0%;}
+}
+
+.magic{
+    position:absolute;
+    top:30%;
+    left:30%;
+    width:50%;
+    max-height: 50%;
+    animation: magic 0.8s linear infinite;
+}
+
+
+
+.NavBar{
+    position:absolute;
+    left:0px;
+    top:0px;
+}
+
+.MainPage{
+    position:absolute;
+    left:0px;
+    top:20%;
+    width:100%;
+}
+
+.RulesBG{
+    width: 100%;
+    max-height:inherit;
+    border-radius: 43px;
+
+}
+
+.PlayBG{
+    width: 100%;
+    max-height:inherit;
+    border-radius: 43px;
+
+}
+
+.LeaderboardBG{
+    width: 100%;
+    max-height:inherit;
+    border-radius: 43px;
+
+}
+
+
+.RulesOut{
+    width: 100%;
+    max-width: 300px;
+    height: 100%;
+    max-height:80px;
+    position: relative;
+    margin-top: 15%;
+    margin-left:auto;
+    margin-right:auto;
+    display:flex;
+    align-items: center;
+}
+
+.PlayOut{
+    width: 100%;
+    max-width: 300px;
+    height: 100%;
+    max-height:80px;
+    position: relative;
+    margin-top: 0%;
+    margin-left:10%;
+    margin-right:auto;
+    display:flex;
+    align-items: center;
+}
+
+.PlayButton{
+    border-radius: 43px;
+    border: 2px solid #CC6D3B;
+    background-color: rgba(0,0,0,0);
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: inherit;
+    height: 80px;
+    font-family: FicTitleGothic;
+    font-size: 150%;
+    color : #aadbfc;
+}
+
+
+.LeaderboardOut{
+    width: 100%;
+    max-width: 300px;
+    height: 100%;
+    max-height:80px;
+    position: relative;
+    margin-top: 0%;
+    margin-left:70%;
+    margin-right:auto;
+    display:flex;
+    align-items: center;
+}
+
+.LeaderboardButton{
+    border-radius: 43px;
+    border: 2px solid #CC6D3B;
+    background-color: rgba(0,0,0,0);
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: inherit;
+    height: 80px;
+    font-family: FicTitleGothic;
+    font-size: 150%;
+    color : #aadbfc;
+}
+
+.RulesButton{
+    border-radius: 43px;
+    border: 2px solid #CC6D3B;
+    background-color: rgba(0,0,0,0);
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: inherit;
+    height: inherit;
+    font-family: FicTitleGothic;
+    font-size: 150%;
+    color : #1C6080;
+}
+
+.FicTitle{
+    text-align: center;
+    font-family: FicTitleGothic;
+    font-size: 800%;
+    color: #bcf7cb;
+    text-shadow: 2px 2px #007F5F;
+}
+
+.FicTitleEnclose{
+    display:inline;
+}
+
+.elements{
+    display:inline-block;
+    transition-duration: 0.5s;
+}
+
+.animate1{
+    mix-blend-mode:color;animation:blobs 15s ease-in-out infinite alternate;
+    background:#ff1493;
+    position:absolute;
+    display:inline-block;
+	width:60px;
+	height:60px;
+	top:12%;
+    right:49%;
+    opacity: 0.5;
+}
+
+.animate2{
+    mix-blend-mode:color;animation:blobs 15s ease-in-out infinite alternate;
+    background:#f36803;
+	width:120px; 
+	height:60px;
+    position:absolute;
+	top:10px;
+
+	left:14%;
+}
+
+.FicTitle #F{
+    margin-left:auto;
+    color:#8947c3;
+    
+}
+
+.FicTitle #O{
+    color: #4cbae7;
+}
+
+.dragon{
+    max-width: 400px;
+    position:absolute;
+    opacity: 1;
+}
+    
+
+@keyframes blobs{
+	0%{border-radius:26% 74% 61% 39% / 54% 67% 33% 46%}
+	10%{border-radius:74% 26% 47% 53% / 68% 46% 54% 32%}
+	20%{border-radius:48% 52% 30% 70% / 27% 37% 63% 73%}
+	30%{border-radius:73% 27% 57% 43% / 28% 67% 33% 72%}
+	40%{border-radius:63% 37% 56% 44% / 25% 28% 72% 75%}
+	50%{border-radius:39% 61% 70% 30% / 61% 29% 71% 39%}
+	60%{border-radius:27% 73% 29% 71% / 73% 51% 49% 27%}
+	70%{border-radius:39% 61% 65% 35% / 74% 65% 35% 26%}
+	80%{border-radius:55% 45% 37% 63% / 38% 30% 70% 62%}
+	90%{border-radius:25% 75% 70% 30% / 39% 50% 50% 61%}
+	100%{border-radius:66% 34% 33% 67% / 65% 73% 27% 35%}
+	}
